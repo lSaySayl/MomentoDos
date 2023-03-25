@@ -18,7 +18,7 @@ public class Main {
             switch (tribuna) {
                 case 1, 2:
                     do {
-                        System.out.print("¿Cuántas boletas va a comprar para sur siendo abonado? (Máximo 1): ");
+                        System.out.print("¿Cuántas boletas va a comprar para popular(norte/sur) siendo abonado? (Máximo 1): ");
                         cantidadBoletas = sc.nextInt();
                     } while (cantidadBoletas != 1);
                     fecha = fechaCompra();
@@ -100,7 +100,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int cantidadBoletas;
         do {
-            System.out.print("¿Cuántas boletas va a comprar para su tribuna sin ser abonado? (Máximo 5): ");
+            System.out.print("¿Cuántas boletas va a comprar sin ser abonado? (Máximo 5): ");
             cantidadBoletas = sc.nextInt();
         } while (cantidadBoletas < 1 || cantidadBoletas > 5);
         return cantidadBoletas;
